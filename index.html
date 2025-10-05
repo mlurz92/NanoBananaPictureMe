@@ -3,74 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PictureMe - AI Photo Transformer</title>
+    <title>PictureMe - AI Photo Generator</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-    <script src="https://cdn.jsdelivr.net/npm/framer-motion@10.16.4/dist/framer-motion.umd.min.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: #000000;
-        }
-        .font-caveat { 
-            font-family: 'Caveat', cursive; 
-        }
-        @keyframes fade-in-down {
-            0% { opacity: 0; transform: translate(-50%, -20px); }
-            100% { opacity: 1; transform: translate(-50%, 0); }
-        }
-        .animate-fade-in-down { 
-            animation: fade-in-down 0.5s ease-out forwards; 
-        }
-        .styled-scrollbar::-webkit-scrollbar { width: 8px; }
-        .styled-scrollbar::-webkit-scrollbar-track { background: #334155; border-radius: 10px; }
-        .styled-scrollbar::-webkit-scrollbar-thumb { background: #64748B; border-radius: 10px; }
-        .styled-scrollbar::-webkit-scrollbar-thumb:hover { background: #FBBF24; }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'caveat': ['Caveat', 'cursive'],
-                    },
-                    colors: {
-                        yellow: {
-                            300: '#FDE047',
-                            400: '#FBBF24',
-                        },
-                        gray: {
-                            100: '#F3F4F6',
-                            200: '#E5E7EB',
-                            300: '#D1D5DB',
-                            400: '#9CA3AF',
-                            500: '#6B7280',
-                            600: '#4B5563',
-                            700: '#374151',
-                            800: '#1F2937',
-                            900: '#111827',
-                        },
-                        pink: {
-                            400: '#F472B6',
-                            500: '#EC4899',
-                        },
-                        red: {
-                           400: '#F87171',
-                           500: '#EF4444',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/framer-motion@10/dist/framer-motion.umd.js"></script>
+    
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body>
+<body class="styled-scrollbar">
     <div id="root"></div>
-    <script src="app.js"></script>
+    <script type="text/babel" src="script.js"></script>
 </body>
 </html>
