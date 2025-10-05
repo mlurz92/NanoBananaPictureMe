@@ -1,0 +1,41 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+}
+
+.font-caveat {
+    font-family: 'Caveat', cursive;
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.5s ease-out forwards;
+}
+
+.styled-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.styled-scrollbar::-webkit-scrollbar-track {
+    background: #334155;
+    border-radius: 10px;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+    background: #64748B;
+    border-radius: 10px;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #FBBF24;
+}
